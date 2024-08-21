@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Web Series List</title>
+
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <form class="add-series">
+        <h3>Add a series to List</h3>
+        <input type="text" name="name" value="" placeholder="Enter Series' name" class="input-text"><br>
+        <input type="text" name="image" value="" placeholder="Enter Series image URL" class="input-text"><br>
+        <input type="submit" name="submit" value="Add new Series" class="submit">
+        <input type="button" name="update" value="Update a series" class="update">
+        <input type="button" name="delete" value="Delete a series" class="delete" >
+      </form>
+    </div>
+    <p>Watch any webseries</p>
+    <div id="series-collection">
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

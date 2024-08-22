@@ -37,7 +37,7 @@ addSeries.addEventListener('submit', function(event){
             'Content-Type':'application/json',
         },
         body: JSON.stringify({
-            name: event.target.name.value,
+            name: `${event.target.name.value}`,
             image: `${event.target.image.value}`
         })
     })
@@ -52,14 +52,17 @@ addSeries.addEventListener('submit', function(event){
     })
 });
 
-// addSeries.addEventListener(onclick, function(event){
-    function update(){fetch('http://localhost:3000/series/b225', {
+const updateseries=document.querySelector(".update-series")
+updateseries.addEventListener('submit', function(event){
+    
+    fetch('http://localhost:3000/series/58f0', {
         method:'PUT',
         headers:{
             'Content-Type':'application/json',
         },
         body:JSON.stringify({
             name:event.target.name.value,
+            image:event.target.image.value
         })
     })
     .then(res => {
@@ -72,4 +75,11 @@ addSeries.addEventListener('submit', function(event){
         showCatalogue(data);
     })
 
-    }
+})
+
+const deleteseries=document.querySelector('.delete-series')
+deleteseries.addEventListener('submit', function(){
+    fetch('http://localhost:3000/series/58f0', {
+        method: 'DELETE'
+    })
+})

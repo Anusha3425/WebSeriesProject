@@ -10,17 +10,29 @@
 
     <div class="container">
       <form class="add-series">
+        <h1>WEB SERIES</h1>
         <h3>Add a series to List</h3>
         <input type="text" name="name" value="" placeholder="Enter Series' name" class="input-text"><br>
-        <input type="text" name="image" value="" placeholder="Enter Series image URL" class="input-text"><br>
+        <input type="text" name="image" value="" placeholder="Enter Series image URL" class="input-text-image"><br>
         <input type="submit" name="submit" value="Add new Series" class="submit">
-        <input type="button" name="update" value="Update a series" class="update">
-        <input type="button" name="delete" value="Delete a series" class="delete" >
       </form>
     </div>
-    <p>Watch any webseries</p>
+    <p style="text-align: center;">You can ADD, UPDATE or DELETE any series</p>
     <div id="series-collection">
     </div>
+    <form class="update-series">
+        <h3>UPDATE SERIES</h3>
+        <input type="text" name="name" value="" placeholder="Enter Series name" class="input-text"><br><br>
+        <!-- <input type="text" name="updatename" value="" placeholder="Enter updated series name" class="input-text"><br> -->
+        <input type="text" name="image" value="" placeholder="Enter updated Series image URL" class="input-text-image"><br><br>
+        <input type="submit" name="submit" value="Update Series" class="submit">
+      </form>
+      <form class="delete-series">
+        <h3>DELETE SERIES</h3>
+        <!-- <input type="text" name="name" value="" placeholder="Enter Series' name you want to delete" class="input-text"><br>
+        <input type="text" name="image" value="" placeholder="Enter Series image URL you want to delete" class="input-text"><br> -->
+        <input type="submit" name="submit" value="Delete series" class="submit">
+      </form>
     <script src="index.js"></script>
   </body>
 </html>

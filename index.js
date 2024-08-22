@@ -55,7 +55,7 @@ addSeries.addEventListener('submit', function(event){
 const updateseries=document.querySelector(".update-series")
 updateseries.addEventListener('submit', function(event){
     
-    fetch('http://localhost:3000/series/58f0', {
+    fetch('http://localhost:3000/series/b225', {
         method:'PUT',
         headers:{
             'Content-Type':'application/json',
@@ -79,7 +79,7 @@ updateseries.addEventListener('submit', function(event){
 
 const deleteseries=document.querySelector('.delete-series')
 deleteseries.addEventListener('submit', function(){
-    fetch('http://localhost:3000/series/58f0', {
+    fetch('http://localhost:3000/series/b225', {
         method: 'DELETE'
     })
 })
